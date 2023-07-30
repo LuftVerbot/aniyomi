@@ -94,7 +94,7 @@ val GITHUB_REPO: String by lazy {
     if (BuildConfig.PREVIEW) {
         "aniyomiorg/aniyomi-preview"
     } else {
-        "LuftVerbot/kuukiyomi"
+        "aniyomiorg/aniyomi"
     }
 }
 

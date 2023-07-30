@@ -47,9 +47,6 @@ fun EntryToolbar(
     onClickMigrate: (() -> Unit)?,
     // Anime only
     changeAnimeSkipIntro: (() -> Unit)?,
-    // SY -->
-    onClickEditInfo: (() -> Unit)?,
-    // SY <--
     // For action mode
     actionModeCounter: Int,
     onSelectAll: () -> Unit,
@@ -142,17 +139,6 @@ fun EntryToolbar(
                                 },
                             )
                         }
-                        // SY -->
-                        if (onClickEditInfo != null) {
-                            DropdownMenuItem(
-                                text = { Text(text = stringResource(R.string.action_edit_info)) },
-                                onClick = {
-                                    onClickEditInfo()
-                                    closeMenu()
-                                },
-                            )
-                        }
-                        // SY <--
                         if (changeAnimeSkipIntro != null) {
                             DropdownMenuItem(
                                 text = { Text(text = stringResource(R.string.action_change_intro_length)) },

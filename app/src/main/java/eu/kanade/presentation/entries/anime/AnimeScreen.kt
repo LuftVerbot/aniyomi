@@ -123,9 +123,6 @@ fun AnimeScreen(
     onDownloadActionClicked: ((DownloadAction) -> Unit)?,
     onEditCategoryClicked: (() -> Unit)?,
     onMigrateClicked: (() -> Unit)?,
-    // SY -->
-    onEditInfoClicked: () -> Unit,
-    // SY <--
     changeAnimeSkipIntro: (() -> Unit)?,
 
     // For bottom action menu
@@ -175,9 +172,6 @@ fun AnimeScreen(
             onDownloadActionClicked = onDownloadActionClicked,
             onEditCategoryClicked = onEditCategoryClicked,
             onMigrateClicked = onMigrateClicked,
-            // SY -->
-            onEditInfoClicked = onEditInfoClicked,
-            // SY <--
             changeAnimeSkipIntro = changeAnimeSkipIntro,
             onMultiBookmarkClicked = onMultiBookmarkClicked,
             onMultiMarkAsSeenClicked = onMultiMarkAsSeenClicked,
@@ -215,9 +209,6 @@ fun AnimeScreen(
             onEditCategoryClicked = onEditCategoryClicked,
             changeAnimeSkipIntro = changeAnimeSkipIntro,
             onMigrateClicked = onMigrateClicked,
-            // SY -->
-            onEditInfoClicked = onEditInfoClicked,
-            // SY <--
             onMultiBookmarkClicked = onMultiBookmarkClicked,
             onMultiMarkAsSeenClicked = onMultiMarkAsSeenClicked,
             onMarkPreviousAsSeenClicked = onMarkPreviousAsSeenClicked,
@@ -264,9 +255,6 @@ private fun AnimeScreenSmallImpl(
     onDownloadActionClicked: ((DownloadAction) -> Unit)?,
     onEditCategoryClicked: (() -> Unit)?,
     onMigrateClicked: (() -> Unit)?,
-    // SY -->
-    onEditInfoClicked: () -> Unit,
-    // SY <--
     changeAnimeSkipIntro: (() -> Unit)?,
 
     // For bottom action menu
@@ -321,9 +309,6 @@ private fun AnimeScreenSmallImpl(
                 onClickEditCategory = onEditCategoryClicked,
                 onClickRefresh = onRefresh,
                 onClickMigrate = onMigrateClicked,
-                // SY -->
-                onClickEditInfo = onEditInfoClicked.takeIf { state.anime.favorite },
-                // SY <--
                 changeAnimeSkipIntro = changeAnimeSkipIntro,
                 actionModeCounter = episodes.count { it.selected },
                 onSelectAll = { onAllEpisodeSelected(true) },
@@ -531,9 +516,6 @@ fun AnimeScreenLargeImpl(
     onDownloadActionClicked: ((DownloadAction) -> Unit)?,
     onEditCategoryClicked: (() -> Unit)?,
     onMigrateClicked: (() -> Unit)?,
-    // SY -->
-    onEditInfoClicked: () -> Unit,
-    // SY <--
     changeAnimeSkipIntro: (() -> Unit)?,
 
     // For bottom action menu
@@ -594,9 +576,6 @@ fun AnimeScreenLargeImpl(
                     onClickEditCategory = onEditCategoryClicked,
                     onClickRefresh = onRefresh,
                     onClickMigrate = onMigrateClicked,
-                    // SY -->
-                    onClickEditInfo = onEditInfoClicked.takeIf { state.anime.favorite },
-                    // SY <--
                     changeAnimeSkipIntro = changeAnimeSkipIntro,
                     actionModeCounter = episodes.count { it.selected },
                     onSelectAll = { onAllEpisodeSelected(true) },
