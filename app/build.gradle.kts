@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
 
-        applicationId = "xyz.luft.tachiyomi.mi"
+        applicationId = "xyz.farnsie.tachiyomi.mi"
 
         versionCode = 103
         versionName = "0.2.1"
