@@ -26,7 +26,9 @@ jobs:
       - name: Get Latest Tag
         id: latest_tag
         run: |
-          echo "::set-output name=TAG::$(git describe --abbrev=0 --tags)"
+          # Get the latest tag or use a fallback value
+          latest_tag=$(git describe --abbrev=0 --tags || echo "v1.0.0")
+          echo "TAG=$latest_tag" >> $GITHUB_ENV  # Set the environment variable
       
       - name: List APK Files
         run: ls -R app/build/outputs/apk/standard/release/
@@ -41,8 +43,8 @@ jobs:
             app/build/outputs/apk/standard/release/app-standard-armeabi-v7a-release-unsigned.apk
             app/build/outputs/apk/standard/release/app-standard-x86-release-unsigned.apk
             app/build/outputs/apk/standard/release/app-standard-x86_64-release-unsigned.apk
-          tag_name: ${{ steps.latest_tag.outputs.TAG }}
-          name: femiyomi Release - ${{ steps.latest_tag.outputs.TAG }}
+          tag_name: ${{ env.TAG }}
+          name: femiyomi Release - ${{ env.TAG }}
           draft: false  # Set to 'true' if you want to create draft releases
           prerelease: false
         env:
