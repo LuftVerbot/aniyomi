@@ -39,4 +39,5 @@ jobs:
           name: femiyomi Release - v${{ github.run_number }}
           draft: false  # Set to 'true' if you want to create draft releases
           prerelease: false
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
