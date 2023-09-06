@@ -30,11 +30,11 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            app/build/outputs/apk/standard/preview/app-standard-universal-preview.apk
-            app/build/outputs/apk/standard/preview/app-standard-arm64-v8a-preview.apk
-            app/build/outputs/apk/standard/preview/app-standard-armeabi-v7a-preview.apk
-            app/build/outputs/apk/standard/preview/app-standard-x86-preview.apk
-            app/build/outputs/apk/standard/preview/app-standard-x86_64-preview.apk
+            app/build/outputs/apk/standard/release/app-standard-universal-release-unsigned.apk
+            app/build/outputs/apk/standard/release/app-standard-arm64-v8a-release-unsigned.apk
+            app/build/outputs/apk/standard/release/app-standard-armeabi-v7a-release-unsigned.apk
+            app/build/outputs/apk/standard/release/app-standard-x86-release-unsigned.apk
+            app/build/outputs/apk/standard/release/app-standard-x86_64-release-unsigned.apk
           tag_name: v${{ github.run_number }}
           name: femiyomi Release - v${{ github.run_number }}
           draft: false  # Set to 'true' if you want to create draft releases
