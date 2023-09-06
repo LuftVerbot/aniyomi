@@ -23,11 +23,11 @@ jobs:
         with:
           arguments: lintKotlin assembleStandardRelease testStandardReleaseUnitTest
 
-     -   name: Get Latest Tag
-          id: latest_tag
-          run: |
-            echo "::set-output name=TAG::$(git describe --abbrev=0 --tags)"          
-            
+      - name: Get Latest Tag
+        id: latest_tag
+        run: |
+          echo "::set-output name=TAG::$(git describe --abbrev=0 --tags)"
+      
       - name: List APK Files
         run: ls -R app/build/outputs/apk/standard/release/
 
