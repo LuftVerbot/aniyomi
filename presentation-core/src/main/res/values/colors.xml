@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <color name="splash">@color/accent_blue</color>
-
+    <!-- Material You Theme Colors -->
+    <color name="seed">#55CDFC</color>
+    <color name="md_theme_light_primary">#006684</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#BEE9FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001F2A</color>
+    <color name="md_theme_light_secondary">#4D616C</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#D0E6F2</color>
+    <color name="md_theme_light_onSecondaryContainer">#081E27</color>
+    <color name="md_theme_light_tertiary">#A8315C</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#FFD9E1</color>
+    <color name="md_theme_light_onTertiaryContainer">#3F001A</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    <color name="md_theme_light_background">#FBFCFE</color>
+    <color name="md_theme_light_onBackground">#191C1E</color>
+    <color name="md_theme_light_surface">#FBFCFE</color>
+    <color name="md_theme_light_onSurface">#191C1E</color>
+    <color name="md_theme_light_surfaceVariant">#DCE4E9</color>
+    <color name="md_theme_light_onSurfaceVariant">#40484C</color>
+    <color name="md_theme_light_outline">#70787D</color>
+    <color name="md_theme_light_inverseOnSurface">#EFF1F3</color>
+    <color name="md_theme_light_inverseSurface">#2E3133</color>
+    <color name="md_theme_light_inversePrimary">#68D3FF</color>
+    <color name="md_theme_light_shadow">#000000</color>
+    <color name="md_theme_light_surfaceTint">#006684</color>
+    <color name="md_theme_light_outlineVariant">#C0C8CD</color>
+    <color name="md_theme_light_scrim">#000000</color>
+    
+    <!-- Existing App Colors -->
+    <color name="splash">@color/seed</color>
     <color name="cover_placeholder">#1F888888</color>
-
     <color name="error">#BA1B1B</color>
     <color name="errorContainer">#FFDAD4</color>
     <color name="onError">#FFFFFF</color>
@@ -69,5 +101,4 @@
     <!-- ActionMode status bar color -->
     <color name="abc_decor_view_status_guard" tools:override="true">@android:color/transparent</color>
     <color name="abc_decor_view_status_guard_light" tools:override="true">@android:color/transparent</color>
-
 </resources>

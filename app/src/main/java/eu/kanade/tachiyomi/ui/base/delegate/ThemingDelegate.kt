@@ -53,6 +53,9 @@ interface ThemingDelegate {
                 AppTheme.MATRIX -> {
                     resIds += R.style.Theme_Tachiyomi_Matrix
                 }
+                AppTheme.COTTONCANDY -> {
+                    resIds += R.style.Theme_Tachiyomi_CottonCandy
+                }
                 AppTheme.TIDAL_WAVE -> {
                     resIds += R.style.Theme_Tachiyomi_TidalWave
                 }

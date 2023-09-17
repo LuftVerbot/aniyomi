@@ -18,6 +18,7 @@ enum class AppTheme(val titleResId: Int?) {
     SAPPHIRE(R.string.theme_sapphire),
     DOOM(R.string.theme_doom),
     MATRIX(R.string.theme_matrix),
+    COTTONCANDY(R.string.theme_cottoncandy),
 
     // Deprecated
     DARK_BLUE(null),
